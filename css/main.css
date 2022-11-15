@@ -508,23 +508,40 @@ body {
   fill: #ffffff;
 }
 
-.subscription-wrapper {
-  display: flex;
-  align-items: center;
-  gap: 12px;
+@media screen and (min-width: 1230px) {
+  .subscription-wrapper {
+    display: flex;
+    align-items: baseline;
+    gap: 12px;
+  }
 }
 .subscription-input {
-  width: 358px;
+  display: block;
+  margin-right: auto;
+  margin-left: auto;
+  width: 450px;
   height: 50px;
   padding: 15px 16px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   border-radius: 4px;
   background-color: #2f303a;
   color: #ffffff;
 }
+@media screen and (min-width: 1230px) {
+  .subscription-input {
+    width: 358px;
+    display: inline-flex;
+    margin-right: 0;
+    margin-left: 0;
+  }
+}
 .subscription-btn {
   min-width: 200px;
   height: 50px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   background-color: #2196f3;
   color: #ffffff;
   font-weight: 700;
@@ -736,25 +753,34 @@ body {
   text-align: center;
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../images/hero-bg-image.jpg);
   background-color: #c4c4c4;
-  max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  padding-top: 200px;
-  padding-bottom: 200px;
   margin: 0 auto;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .hero {
+    max-width: 1600px;
+  }
 }
 .hero--title {
   margin-bottom: 30px;
-  width: 696px;
   margin-left: auto;
   margin-right: auto;
   color: #ffffff;
   font-weight: 900;
-  font-size: 44px;
-  line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
+  font-size: 26px;
+  line-height: 1.62;
 }
 .hero--button {
   padding: 10px 32px;
@@ -1026,20 +1052,50 @@ body {
   padding-top: 60px;
   padding-bottom: 60px;
   background-color: #2f303a;
+  text-align: center;
+}
+@media screen and (min-width: 768px) {
+  .footer-flex {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: baseline;
+  }
+}
+@media screen and (min-width: 1230px) {
+  .footer-flex {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 .footer-logo {
   margin-bottom: 20px;
 }
 .footer-call-to-action {
   margin-bottom: 20px;
+  font-weight: 700;
   color: #ffffff;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
+@media screen and (min-width: 1230px) {
+  .footer-call-to-action {
+    text-align: start;
+  }
+}
 
+.address-list {
+  margin-bottom: 60px;
+}
 .address-item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 1230px) {
+  .address-item:not(:last-child) {
+    margin-bottom: 9px;
+  }
 }
 .address-link {
   line-height: 1.71;
@@ -1069,12 +1125,16 @@ body {
   display: flex;
   gap: 10px;
   justify-content: center;
+  margin-bottom: 60px;
 }
 .footer-social-item {
   width: 44px;
   height: 44px;
 }
 .footer-social-link {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 100%;
   border-radius: 50%;
