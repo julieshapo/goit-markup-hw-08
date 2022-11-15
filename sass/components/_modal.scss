@@ -103,10 +103,9 @@
   &-label {
   position: relative;
 
-  @include centeredFlex($type, $align, flex-end);
-  // display: flex;
-  // align-items: center;
-  // justify-content: flex-end;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
 
   line-height: 1.71;
 

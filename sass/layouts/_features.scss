@@ -1,14 +1,9 @@
 
 .features {
-  display: flex;
-  gap: 30px;
-
-  &--item {
-    flex-basis: calc((100% - 90px) / 4);
-  }
+  
 
   &--pic {
-    @include centeredFlex();
+    // @include centeredFlex();
     
     width: 100%;
     height: 120px;
