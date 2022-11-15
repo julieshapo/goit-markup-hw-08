@@ -1,0 +1,14 @@
+.section {
+  padding-top: 94px;
+  padding-bottom: 94px;
+  background-color: $colorHeaderBg;
+
+  &-title {
+  margin-bottom: 50px;
+
+  color: $colorSecondaryText;
+  font-size: 36px;
+  line-height: 1.6;
+  text-align: center;
+}
+}

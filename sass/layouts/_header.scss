@@ -1,0 +1,19 @@
+.header {
+  background-color: $colorHeaderBg;
+  border-bottom: 1px solid $colorHeaderFrame;
+  padding-top: 24px;
+  padding-bottom: 25px;
+  height: 80px;
+
+    &-items {
+    @include centeredFlex($type, $align, space-between);
+    // display: flex;
+    // justify-content: space-between;
+    // align-items: center;
+    }
+
+    &-logo {
+    margin-right: 93px;
+    }
+}
+

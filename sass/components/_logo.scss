@@ -1,0 +1,17 @@
+.logo {
+  display: block;
+
+  font-family: Raleway, sans-serif;
+  color: $colorAccent;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.19;
+
+  &-black {
+    color: $colorLogoBlack;
+  }
+
+  &-white {
+    color: $colorHeaderBg;
+  }
+}

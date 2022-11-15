@@ -1,0 +1,33 @@
+
+.contact {
+  display: flex;
+  gap: 50px;
+
+    &-item {
+    align-items: center;
+    }
+
+    &-link {
+    display: flex;
+    align-items: center;
+
+    color: $colorPrimaryText;
+    font-weight: 500;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+
+    transition: color  $transitionDuration  $cubicBezier;
+    }
+
+    &-icon {
+    fill: currentColor;
+    margin-right: 10px;
+    }
+
+    &-link:hover,
+    &-link:focus {
+    color: $colorAccent;
+    }
+}
+
+
