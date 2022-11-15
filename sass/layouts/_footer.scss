@@ -4,13 +4,11 @@
   padding-bottom: 60px;
   background-color:  $colorFooterBg;
 
-    &-flex {
-    @include centeredFlex($type, baseline, space-between);
-
+    // &-flex {
     // display: flex;
     // align-items: baseline;
     // justify-content: space-between;
-    }
+    // }
 
     &-logo {
     margin-bottom: 20px;
@@ -75,8 +73,7 @@
     }
 
     &-link {
-    @include centeredFlex(inline-flex);
-        
+           
     // display: inline-flex;
     // justify-content: center;
     // align-items: center;

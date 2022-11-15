@@ -1,14 +1,25 @@
 .section {
-  padding-top: 94px;
-  padding-bottom: 94px;
+  padding-top: 60px;
+  padding-bottom: 60px;
   background-color: $colorHeaderBg;
+
+  @media screen and (min-width: 1230px) {
+    padding-top: 94px;
+    padding-bottom: 94px;
+  }
 
   &-title {
   margin-bottom: 50px;
 
   color: $colorSecondaryText;
-  font-size: 36px;
-  line-height: 1.6;
+  font-size: 28px;
+  line-height: 1.18;
   text-align: center;
+
+  @media screen and (min-width: 1230px) {
+    font-size: 36px;
+    line-height: 1.6;
+    
+  }
 }
 }

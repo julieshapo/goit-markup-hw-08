@@ -5,12 +5,12 @@
   padding-bottom: 25px;
   height: 80px;
 
-    &-items {
-    @include centeredFlex($type, $align, space-between);
+    // &-items {
+  
     // display: flex;
     // justify-content: space-between;
     // align-items: center;
-    }
+    // }
 
     &-logo {
     margin-right: 93px;
