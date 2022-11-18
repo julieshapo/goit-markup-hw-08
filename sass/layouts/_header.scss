@@ -1,9 +1,17 @@
 .header {
   background-color: $colorHeaderBg;
   border-bottom: 1px solid $colorHeaderFrame;
-  padding-top: 24px;
-  padding-bottom: 25px;
-  height: 80px;
+  height: 60px;
+  padding-top: 16px;
+  padding-bottom: 16px;
+
+  // padding-top: 24px;
+  // padding-bottom: 25px;
+  // height: 80px;
+    &-mobile {
+      display: flex;
+      justify-content: space-between;
+    }
 
     // &-items {
   
@@ -14,6 +22,14 @@
 
     &-logo {
     // margin-right: 93px;
+    }
+
+    &-menu-btn {
+      display: inline-flex;
+      margin: 0;
+      padding: 0;
+      border: none;
+      border-color: transparent;
     }
 }
 
