@@ -11,6 +11,10 @@
       height: 80px;
     }
   
+    @media screen and (min-width: 1230px) {
+      padding-top: 26px;
+      padding-bottom: 26px;
+     }
 
 
     &-mobile {
@@ -23,13 +27,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    }
 
-    &-logo {
-    // margin-right: 93px;
+    @media screen and (min-width: 1230px) {
+      max-width: 1230px;
+      justify-content: start;
     }
-
-   
+    }
+    
+    @media screen and (min-width: 1230px) {
+      &-logo {
+      margin-right: 93px;
+    }
+    }
+    
 }
 
 .menu-open {
@@ -162,7 +172,7 @@
     color: $colorAccent;
   }
 
-  &-link::after {
+    &-item:not(:last-child):after {
     position: absolute; 
     margin-left: 10px;
 
@@ -171,14 +181,4 @@
     height: 22px;
     background-color: rgba(33, 33, 33, 0.2);
   }
-
-  //  &-link:not(:last-child)::after {
-  //   position: absolute; 
-  //   margin-left: 10px;
-
-  //   content: '';
-  //   width: 1px;
-  //   height: 22px;
-  //   background-color: rgba(33, 33, 33, 0.2);
-  // }
 }
