@@ -8,15 +8,15 @@
   align-items: center;
   }
   
+  @media screen and (min-width: 1230px) {
+    margin-right: auto;
+  }
 
   .site-nav-list {
   display: flex;
   gap: 50px;
 }
 
-/* &-item:not(:last-child) {
-  margin-right: 50px;
-} */
 
 &-link.link {
   position: relative;

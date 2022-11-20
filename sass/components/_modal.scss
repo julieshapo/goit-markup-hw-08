@@ -3,7 +3,6 @@
   top: 50%;
   left: 50%;
 
-  max-width: 528px;
   padding: 40px;
 
   background-color: $colorHeaderBg;
@@ -13,6 +12,14 @@
 
   transform: translate(-50%, -50%) scale(1);
   transition: transform  $transitionDuration  $cubicBezier;
+
+ @media screen and (min-width: 480px) and (max-width: 1229px) {
+  width: 450px;
+ }
+
+  @media screen and (min-width: 1230px) {
+    width: 528px;    
+  }
 
     &-title {
     font-weight: 700;
@@ -105,9 +112,7 @@
 
   display: flex;
   align-items: center;
-  justify-content: flex-end;
-
-  line-height: 1.71;
+  justify-content: center;
 
   margin-bottom: 30px;
 }
@@ -146,6 +151,17 @@
   opacity: 1;
 }
 
+&-text {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  text-align: right;
+
+  @media screen and (min-width: 1230px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
+}
+
 &-link {
   color: $colorAccent;
   margin-left: 5px;
@@ -155,6 +171,9 @@
 
 
 .modal-btn-submit {
+
+@extend %btn;
+
   padding: 10px 52px;
   min-width: 200px;
   margin: 0 auto;

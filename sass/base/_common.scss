@@ -14,3 +14,8 @@ body {
 .link {
   text-decoration: none;
 }
+
+.is-hidden {
+    visibility: hidden;
+    pointer-events: none;
+    opacity: 0;}

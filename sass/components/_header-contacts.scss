@@ -1,20 +1,26 @@
 
 .contact {
-  // display: flex;
-  // gap: 50px;
-  display: none;
+    display: none;
 
   @media screen and (min-width: 768px) {
     display: block;
   }
 
+  @media screen and (min-width: 1230px) {
+    display: flex;
+    gap: 50px;
+  }
+
     &-item {
     align-items: center;
     }
-
+    
+    @media screen and (min-width: 768px) and (max-width: 1229px) {
     &-item:not(:last-child) {
       margin-bottom: 10px;
     }
+    }
+    
 
     &-link {
     display: flex;
@@ -35,10 +41,24 @@
     }
     }
 
-    &-icon-desktop {
+    &-icon {
     fill: currentColor;
-    margin-right: 10px;
-    }
+    margin-right: 10px;}
+        
+
+      &-icon-envelope {
+      @media screen and (min-width:768px) and (max-width:1229px) {
+        width: 14px;
+        height: 10px;
+      };
+      }
+
+      &-icon-smartphone {
+      @media screen and (min-width:768px) and (max-width:1229px) {
+        width: 10px;
+        height: 14px;
+      };
+      }
 
     &-link:hover,
     &-link:focus {
