@@ -40,6 +40,12 @@
     }
 }
     &-address {
+
+     @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
+
         @media screen and (min-width: 1200px) {
         text-align: left;
         }
@@ -49,7 +55,7 @@
 .address {
 
     &-list {
-        margin-bottom: 60px;
+        
     }
 
     &-item:not(:last-child) {
@@ -91,11 +97,15 @@
 
 .footer-social {
 
+    @media screen and (max-width: 1199px) {
+        margin-bottom: 60px;
+    }
+
+
     &-list {
     display: flex;
     gap: 10px;
     justify-content: center;
-    margin-bottom: 60px;
     }
 
     &-item {

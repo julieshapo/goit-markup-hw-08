@@ -3,6 +3,8 @@
   top: 50%;
   left: 50%;
 
+  width: 95%;
+
   padding: 40px;
 
   background-color: $colorHeaderBg;
@@ -121,6 +123,7 @@
   position: absolute;
   top: 50%;
   left: 0;
+  
 
   transform: translateY(-50%);
 
@@ -133,6 +136,7 @@
   position: absolute;
   top: 50%;
   left: 0;
+  
 
   transform: translateY(-50%);
 
@@ -155,6 +159,7 @@
   font-size: 12px;
   line-height: calc(14 / 12);
   text-align: center;
+  margin-left: 10px;
 
   @media screen and (min-width: 1200px) {
     font-size: 14px;

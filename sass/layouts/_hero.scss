@@ -15,12 +15,12 @@
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  max-width: 480px;
+  max-width: 1600px;
 
   @media screen and (min-width: 768px) {
     background-image: $gradientHero,
     url(../images/hero/hero-bg-tab.jpg);
-    max-width: 768px;
+    
 
     @include retina {
     background-image: $gradientHero,
@@ -30,7 +30,7 @@
   
 
   @media screen and (min-width: 1200px) {
-    max-width: 1600px;
+    
     padding-top: 200px;
     padding-bottom: 200px;
     background-image: $gradientHero,
