@@ -1,20 +1,28 @@
 
 .filter {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
   gap: 8px;
+  margin-bottom: 40px;
+  
+  @media screen and (min-width: 768px) {
+  justify-content: center;
+  margin-bottom: 30px;
+  }
+    
+  @media screen and (min-width: 1230px) {
   margin-bottom: 50px;
-
-    /* &-item:not(:last-child) {
-        margin-right: 8px;
-    } */
+  }
 
     &-button {
     @extend %btn;
     
     padding: 6px 22px;
-    min-width: fit-content;
 
+    @media screen and (max-width: 767px) {
+    margin-bottom: 15px;
+    }
+    
     background-color: $colorSecondaryBg;
     color: $colorSecondaryText;
     font-weight: 500;
@@ -42,12 +50,23 @@
 
 
 .project {
-  display: flex;
-  flex-wrap: wrap;
+  
   gap: 30px;
 
+
+@media screen and (min-width: 768px) {
+  display: flex;
+  flex-wrap: wrap;
+}
+
     &-item {
-    flex-basis: calc((100% - 60px) / 3);
+
+@media screen and (min-width: 768px) {
+  flex-basis: calc((100% - 30px) / 2);
+}
+@media screen and (min-width: 1230px) {
+  flex-basis: calc((100% - 60px) / 3);
+}
     }
 
     &-link {

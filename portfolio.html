@@ -17,10 +17,10 @@
     <!-- Шапка сайту -->
     <header class="header">
       <div class="container header-items">
+        <a href="./index.html" class="logo header-logo link"
+          >Web<span class="logo-black">Studio</span></a
+        >
         <nav class="site-nav">
-          <a href="./index.html" class="logo header-logo link"
-            >Web<span class="logo-black">Studio</span></a
-          >
           <ul class="site-nav-list list">
             <li class="site-nav-item">
               <a class="site-nav-link link" href="./index.html">Студія</a>
@@ -53,6 +53,68 @@
             >
           </li>
         </ul>
+
+        <button type="button" class="menu-open" data-menu-open>
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use href="./images/symbol-defs.svg#icon-menu-40px"></use>
+          </svg>
+        </button>
+      </div>
+
+      <div class="mob-menu is-hidden" data-menu>
+        <div class="mob-container">
+          <button type="button" class="mob-menu-close" data-menu-close>
+            <svg width="40" height="40">
+              <use href="./images/symbol-defs.svg#icon-close-40px"></use>
+            </svg>
+          </button>
+          <ul class="mob-menu-list list">
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="./index.html">Студія</a>
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link current" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="mob-menu-item">
+              <a class="mob-menu-link link" href="">Контакти</a>
+            </li>
+          </ul>
+
+          <div class="mob-contacts">
+            <ul class="mob-contact list">
+              <li class="mob-contact-item">
+                <a class="mob-contact-tel link" href="tell:+380961111111"
+                  >+38 096 111 11 11</a
+                >
+              </li>
+              <li class="mob-contact-item">
+                <a
+                  class="mob-contact-mail link"
+                  href="mailto:info@devstudio.com"
+                >
+                  info@devstudio.com</a
+                >
+              </li>
+            </ul>
+
+            <ul class="mob-social list">
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">Instagram</a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">Twitter</a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">Facebook</a>
+              </li>
+              <li class="mob-social-item">
+                <a href="" class="mob-social-link link">LinkedIn</a>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     </header>
 
@@ -83,12 +145,35 @@
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio-1.jpg"
-                    alt="Сторінка веб-сайту на екрані лептопа"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-desk.jpg    1x,
+                        ./images/portfolio/port-1-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-tab.jpg    1x,
+                        ./images/portfolio/port-1-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-1-mob.jpg    1x,
+                        ./images/portfolio/port-1-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-1-desk.jpg"
+                      alt="Сторінка веб-сайту на екрані лептопа"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -107,12 +192,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-2.jpg"
-                    alt="Два баскетболісти грають у м'яч"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-desk.jpg    1x,
+                        ./images/portfolio/port-2-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-tab.jpg    1x,
+                        ./images/portfolio/port-2-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-2-mob.jpg    1x,
+                        ./images/portfolio/port-2-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-2-desk.jpg"
+                      alt="Два баскетболісти грають у м'яч"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -133,12 +241,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-3.jpg"
-                    alt="Логотип ресторану"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-desk.jpg    1x,
+                        ./images/portfolio/port-3-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-tab.jpg    1x,
+                        ./images/portfolio/port-3-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-3-mob.jpg    1x,
+                        ./images/portfolio/port-3-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-3-desk.jpg"
+                      alt="Логотип ресторану"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -159,12 +290,35 @@
             <li class="project-item">
               <a href="" class="project-link link">
                 <div class="project-thumb">
-                  <img
-                    src="./images/portfolio-4.jpg"
-                    alt="Навушники"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-desk.jpg    1x,
+                        ./images/portfolio/port-4-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-tab.jpg    1x,
+                        ./images/portfolio/port-4-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-4-mob.jpg    1x,
+                        ./images/portfolio/port-4-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-4-desk.jpg"
+                      alt="Навушники"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -185,12 +339,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-5.jpg"
-                    alt="Дві коробки"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-desk.jpg    1x,
+                        ./images/portfolio/port-5-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-tab.jpg    1x,
+                        ./images/portfolio/port-5-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-5-mob.jpg    1x,
+                        ./images/portfolio/port-5-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-5-desk.jpg"
+                      alt="Дві коробки"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -211,12 +388,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-6.jpg"
-                    alt="Сторінка веб-сайту на моніторі"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-desk.jpg    1x,
+                        ./images/portfolio/port-6-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-tab.jpg    1x,
+                        ./images/portfolio/port-6-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-6-mob.jpg    1x,
+                        ./images/portfolio/port-6-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-6 -desk.jpg"
+                      alt="Сторінка веб-сайту на моніторі"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -237,12 +437,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-7.jpg"
-                    alt="Розворот друкованого видання"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-desk.jpg    1x,
+                        ./images/portfolio/port-7-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-tab.jpg    1x,
+                        ./images/portfolio/port-7-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-7-mob.jpg    1x,
+                        ./images/portfolio/port-7-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-7-desk.jpg"
+                      alt="Розворот друкованого видання"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -263,12 +486,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-8.jpg"
-                    alt="Паперова лейба з текстом"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-desk.jpg    1x,
+                        ./images/portfolio/port-8-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-tab.jpg    1x,
+                        ./images/portfolio/port-8-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-8-mob.jpg    1x,
+                        ./images/portfolio/port-8-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-8-desk.jpg"
+                      alt="Паперова лейба з текстом"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем
@@ -289,12 +535,35 @@
             <li class="project-item">
               <a href="" class="project-link link"
                 ><div class="project-thumb">
-                  <img
-                    src="./images/portfolio-9.jpg"
-                    alt="Сторінка додатку на екрані лептопу"
-                    width="370"
-                    height="294"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-desk.jpg    1x,
+                        ./images/portfolio/port-9-desk-2x.jpg 2x
+                      "
+                      media="(min-width: 1230px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-tab.jpg    1x,
+                        ./images/portfolio/port-9-tab-2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/port-9-mob.jpg    1x,
+                        ./images/portfolio/port-9-mob-2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+                    <img
+                      src="./images/portfolio/port-9-desk.jpg"
+                      alt="Сторінка додатку на екрані лептопу"
+                      width="450"
+                    />
+                  </picture>
+
                   <div class="project-overlay">
                     <p class="project-text">
                       Ресурс пропонує комплексні пропозиції з різним рівнем

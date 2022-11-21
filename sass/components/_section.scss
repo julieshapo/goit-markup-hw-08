@@ -9,7 +9,7 @@
   }
 
   &-title {
-  margin-bottom: 50px;
+    margin-bottom: 30px;
 
   color: $colorSecondaryText;
   font-size: 28px;
@@ -17,6 +17,7 @@
   text-align: center;
 
   @media screen and (min-width: 1230px) {
+    margin-bottom: 50px;
     font-size: 36px;
     line-height: 1.6;
     

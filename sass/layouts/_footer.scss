@@ -39,6 +39,11 @@
         text-align: start;
     }
 }
+    &-address {
+        @media screen and (min-width: 1230px) {
+        text-align: left;
+        }
+    }
 }
 
 .address {

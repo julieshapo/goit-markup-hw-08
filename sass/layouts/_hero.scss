@@ -1,29 +1,45 @@
 .hero {
   text-align: center;
-  background-image: linear-gradient(
-      to right,
-      $colorHeroBgGradient,
-      $colorHeroBgGradient
-    ),
-    url(../images/hero-bg-image.jpg);
+  background-image: $gradientHero,
+    url(../images/hero/hero-bg-mob.jpg);
+
+  @include retina {
+  background-image: $gradientHero,
+    url(../images/hero/hero-bg-mob-2x.jpg);
+}
+
   background-color: $colorHeroBg;
-  // max-width: 1600px;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
-  // padding-top: 200px;
-  // padding-bottom: 200px;
   margin: 0 auto;
   padding-top: 118px;
   padding-bottom: 118px;
-  // max-width: 480px;
+  max-width: 480px;
 
   @media screen and (min-width: 768px) {
-    // max-width: 768px;
+    background-image: $gradientHero,
+    url(../images/hero/hero-bg-tab.jpg);
+    max-width: 768px;
+
+    @include retina {
+    background-image: $gradientHero,
+      url(../images/hero/hero-bg-tab-2x.jpg);
+  } 
   }
+  
 
   @media screen and (min-width: 1230px) {
     max-width: 1600px;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: $gradientHero,
+    url(../images/hero/hero-bg-desk.jpg);
+
+    @include retina {
+    background-image: $gradientHero,
+      url(../images/hero/hero-bg-desk-2x.jpg);
+  } 
   }
   
 
@@ -34,13 +50,16 @@
 
   color: $colorHeaderBg;
   font-weight: 900;
-  // font-size: 44px;
-  // line-height: 1.36;
   letter-spacing: 0.06em;
   text-transform: uppercase;
 
   font-size: 26px;
-  line-height: 1.62;
+  line-height: calc(42 / 26);
+
+  @media screen and (min-width: 1230px) {
+    font-size: 44px;
+    line-height: 1.36;
+  }
 }
 
 &--button {
