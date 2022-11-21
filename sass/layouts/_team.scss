@@ -9,7 +9,7 @@
         
       }
 
-      @media screen and (min-width: 1230px) {
+      @media screen and (min-width: 1200px) {
         display: flex;
         gap: 30px;
       
@@ -29,7 +29,7 @@
       flex-basis: calc((100% - 30px) / 2);
     }
 
-     @media screen and (min-width: 1230px) {
+     @media screen and (min-width: 1200px) {
       flex-basis: calc((100% - 90px) / 4);
     }
     }
