@@ -1,89 +1,89 @@
-
 .filter {
   display: flex;
   flex-wrap: wrap;
   gap: 8px;
   margin-bottom: 40px;
-  
+
   @media screen and (min-width: 768px) {
-  justify-content: center;
-  margin-bottom: 30px;
-  }
-    
-  @media screen and (min-width: 1200px) {
-  margin-bottom: 50px;
+    justify-content: center;
+    margin-bottom: 30px;
   }
 
-    &-button {
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 50px;
+  }
+
+  &-item {
+    @media screen and (max-width: 767px) {
+      margin-bottom: 15px;
+    }
+  }
+
+  &-button {
     @extend %btn;
-    
+
     padding: 6px 22px;
 
-    @media screen and (max-width: 767px) {
-    margin-bottom: 15px;
-    }
-    
     background-color: $colorSecondaryBg;
     color: $colorSecondaryText;
     font-weight: 500;
     line-height: 1.6;
     letter-spacing: 0.03em;
 
-    transition: background-color  $transitionDuration  $cubicBezier,
-        color  $transitionDuration  $cubicBezier,
-        box-shadow  $transitionDuration  $cubicBezier;
-    }
+    transition: background-color $transitionDuration $cubicBezier,
+      color $transitionDuration $cubicBezier,
+      box-shadow $transitionDuration $cubicBezier;
+  }
 
-    &-button:hover,
-    &-button:focus {
+  &-button:hover,
+  &-button:focus {
     background-color: $colorAccent;
     color: $colorHeaderBg;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
+  }
 
-    &-button.current {
+  &-button.current {
     background-color: $colorAccent;
     color: $colorHeaderBg;
-    }
-}
-
-.project {
-
-@media screen and (min-width: 768px) {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 30px;
-}
-
-&-item:not(:last-child) {
-
-  @media screen and (max-width:768px) {
-    margin-bottom: 30px;
   }
 }
 
-    &-item {
+.project {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
 
-@media screen and (min-width: 768px) {
-  flex-basis: calc((100% - 30px) / 2);
-}
-@media screen and (min-width: 1200px) {
-  flex-basis: calc((100% - 60px) / 3);
-}
+  &-item:not(:last-child) {
+    @media screen and (max-width: 768px) {
+      margin-bottom: 30px;
     }
+  }
 
-    &-link {
-    display: block;
+  &-item {
+    @media screen and (min-width: 768px) {
+      flex-basis: calc((100% - 30px) / 2);
+    }
+    @media screen and (min-width: 1200px) {
+      flex-basis: calc((100% - 60px) / 3);
+    }
+  }
+
+  &-link {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
     box-shadow: none;
-    transition: box-shadow  $transitionDuration  $cubicBezier;
-    }
+    transition: box-shadow $transitionDuration $cubicBezier;
+  }
 
-    &-thumb {
+  &-thumb {
     position: relative;
     overflow: hidden;
-    }
+  }
 
-    &-overlay {
+  &-overlay {
     position: absolute;
     top: 0;
     left: 0;
@@ -95,45 +95,45 @@
     background-color: rgba(33, 150, 243, 0.9);
 
     transform: translateY(100%);
-    transition: transform  $transitionDuration  $cubicBezier;
-    }
+    transition: transform $transitionDuration $cubicBezier;
+  }
 
-    &-link:hover,
-    &-link:focus {
+  &-link:hover,
+  &-link:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
-        1px 4px 6px rgba(0, 0, 0, 0.16);
-    }
+      1px 4px 6px rgba(0, 0, 0, 0.16);
+  }
 
-    &-link:hover &-overlay,
-    &-link:focus &-overlay {
+  &-link:hover &-overlay,
+  &-link:focus &-overlay {
     transform: translateY(0);
-    }
+  }
 
-    &-text {
+  &-text {
     font-size: 18px;
     line-height: 1.56;
     color: $colorHeaderBg;
-    }
+  }
 
-    &-description {
+  &-description {
+    flex-grow: 1;
     padding: 20px 24px;
     border: 1px solid $colorTeamBg;
     border-top: transparent;
     background-color: $colorHeaderBg;
-    }
+  }
 
-    &-title {
+  &-title {
     margin-bottom: 4px;
     color: $colorSecondaryText;
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
-    }
+  }
 
-    &-type {
+  &-type {
     font-size: 16px;
     line-height: 1.8;
     color: $colorPrimaryText;
-    }
+  }
 }
-
